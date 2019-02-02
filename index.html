@@ -19,29 +19,56 @@
       </nav>
      </header>
      <main class="container"> 
-        <div class="main-text">
-            <img src="img/intro-welcome.svg" width="459" height="353" alt="Текст на фоне гор">
+      <section>
+         <div class="top-background-image"> </div>
+          </section>  
+      <div class="main-text">
+            <img src="img/intro-welcome.svg" width="459" height="353" alt="Добро пожаловать в Седону">
         </div> 
        <h1>Седона-небольшой городок в Аризоне, заслуживающий большего!</h1>
           <p class="reasons">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньен!</p>
           <!--Блок выделен красным-->
      <section class="info">
        <h2>Заинтересовались?</h2>
-          <p class="info-booking">Укажите предпологаемые даты поездки, и мы покажем Вам лучшее предложение гостинниц в седоне</p>
-          <!--Здесь будет форма-->
-     </section>    
+          <p class="info-booking">Укажите предпологаемые даты поездки, <br> и мы покажем Вам лучшее предложение гостинниц в Cедоне</p>
+          <button class="button-booking">Поиск гостинницы в седоне</button>
+          <form class=info-booking action="https://echo.htmlacademy.ru" method="post"> 
+            <div class="form-booking">
+                <label for="day-in">Дата заезда:</label>
+                <input class="date field" type="text" id="day-in" name="in" placeholder="24 апреля 2017" >
+                <div class="icon-calendar"></div>
+              </div>
+              <div class="form-booking">
+                <label for="day-out">Дата выезда:</label>
+                <input class="date field" type="text" id="day-out" name="out" placeholder="4 июля 2017">
+                <div class="icon-calendar"></div>
+              </div>
+              <div class="form-booking">
+                  <label for="adults">Взрослые:</label>
+                  <button class="button minus" type="button">-</button>
+                  <input class="field" type="text" name="adults" id="adults" value="2">
+                  <button class="button plus" type="button">+</button>    
+              </div>
+              <div class="form-booking">
+                  <label for="children">Дети:</label>
+                  <button class="button minus" type="button">-</button>
+                  <input class="field" type="text" name="children" id="children" value="0">
+                  <button class="button plus" type="button">+</button>    
+              </div>
+              <button class="find-button" type="submit"><span>Найти</span></button>
+     </section>   
      </main>
    <footer class="main-footer" >
      <div class="footer-hashtag">#visitsedona</div>
      <div class="footer-social">
        <ul>
-         <li><a class="social-button">
+         <li><a class="social-button" href="#">
            <img src="img/twitter.svg" width="46" height="48" alt="Иконка Твиттера">Твиттер
           </a></li>
-         <li><a class="social-button">
+         <li><a class="social-button" href="#">
             <img src="img/fb-icon.svg" width="46" height="48" alt="Иконка Фейсбук">Фейсбук
          </a></li>
-         <li><a class="social-button">
+         <li><a class="social-button" href="#">
             <img src="img/youtube.svg" width="46" height="48" alt="Иконка Ютуб">Ютуб
          </a></li>
        </ul>
