@@ -8,36 +8,35 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header class="main-header">
+    <div class="cover">
+     <header class="main-header">
       <nav class="main-navigation">
-        <a class="main-header-logo">
-          <img src="img/logo-sedona.svg" width="140" height="71" alt="Логотип «Седоны»">
-        </a>
         <ul class="site-navigation">
           <li class="left"><a href="#">Информация</a></li>
           <li class="left"><a href="#">Фото и видео</a></li>
+          <li class="header-logo"> <a href="#"> <img src="img/logo-sedona.svg" width="140" height="72" alt="Логотип «Седоны»">
+            </a>
           <li class="right"><a href="#">Карта штата</a></li>
           <li class="right"><a href="hotels.html">Гостиницы</a></li>
         </ul>
       </nav>
      </header>
      <main class="container"> 
-      <section>
-         <div class="top-background-image"> </div>
-          </section>  
-      <div class="main-text">
-            <img src="img/intro-welcome.svg" width="459" height="353" alt="Добро пожаловать в Седону">
-        </div> 
-        <div class="promo">  
+        <div class="main-text"> 
+              <img class=welcome-text src="img/intro-welcome.svg" width="459" height="353" alt="Добро пожаловать в Седону"></div>
+        <section class="promo">
        <h1>Седона-небольшой городок в Аризоне, <br> заслуживающий большего!</h1>
-          <p class="reasons">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньен!</p>
-        </div> 
+          <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньен!</p>
+      </section> 
           <!--Блок выделен красным-->
-     <section class="info">
+     <section class="interested">
+      <div class="interested-container">
        <h2>Заинтересовались?</h2>
-          <p class="info-book">Укажите предпологаемые даты поездки, <br> и мы покажем Вам лучшее предложение гостинниц в Cедоне</p>
-          <a class="info-link" href="./form.html">Поиск гостиницы в Седоне</a>
-          <form class=info-booking action="https://echo.htmlacademy.ru" method="post"> 
+          <p>Укажите предпологаемые даты поездки, <br> и мы покажем Вам лучшее предложение гостинниц в Cедоне</p>
+      </div>    
+      <div class="search-form-container">
+      <a class="search-button" href="./form.html">Поиск гостиницы в Седоне</a>
+          <form class=search-form action="https://echo.htmlacademy.ru" method="post"> 
             <div class="form-booking">
                 <label for="day-in">Дата заезда:</label>
                 <input class="date field" type="text" id="day-in" name="in" placeholder="24 апреля 2017" >
@@ -49,17 +48,22 @@
                 <div class="icon-calendar"></div>
               </div>
               <div class="form-booking">
+                <div class="booking">
                   <label for="adults">Взрослые:</label>
-                  <button class="button minus" type="button">-</button>
+                  <div class="unit-container">
+                  <button class="button-minus" type="button">-</button>
                   <input class="field" type="text" name="adults" id="adults" value="2">
-                  <button class="button plus" type="button">+</button>    
-              </div>
-              <div class="form-booking">
+                  <button class="button-plus" type="button">+</button>    
+                  </div>
+                </div>
+                <div class="booking">
                   <label for="children">Дети:</label>
-                  <button class="button minus" type="button">-</button>
+                  <div class="unit-container booking">
+                  <button class="button-minus" type="button">-</button>
                   <input class="field" type="text" name="children" id="children" value="0">
-                  <button class="button plus" type="button">+</button>    
-              </div>
+                  <button class="button-plus" type="button">+</button>    
+                  </div>
+                </div>
               <button class="find-button" type="submit">Найти</button>
      </section>   
      </main>
