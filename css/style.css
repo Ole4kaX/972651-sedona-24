@@ -110,8 +110,12 @@ body {
         text-decoration: none;
         background: #766357;
     }
+    
+    .search-buttone:hover,
+    .search-button:focus{
+     background-color: #604e43;}
+    .search-button:active{background-color:#503e33; color: #857871}
     .search-form {
-        
         position: absolute;
         top: 85px;
         left: 0;
@@ -166,6 +170,10 @@ body {
             opacity: 0.9;
             margin-top: -120px;
          }
+         .find-buttone:hover,
+    .find-button:focus{
+     background-color: #669ec0;}
+    .find-button:active{background-color:#5496bd; color: #88b6d1}
          .footer-hashtag{
            
             display: inline-block;
@@ -259,6 +267,10 @@ body {
                 color: rgba(0, 0, 0, 0.3);
                 border-bottom: 1px dotted #81b3d2;
             }
+            .sorting-rating:hover,
+            .sorting-ratin:focus{
+            color: #81b3d2;}
+           
             .result {
                 background: #ffffff;
                 border-bottom: 1px solid #e5e5e5;
@@ -291,6 +303,11 @@ body {
                 text-decoration: none;
                 font-size: 21px;
             }
+           
+            .hotel-title a:focus{
+             color: #669ec0;}
+             .hotel-title a:active{
+                color: #b2b2b2;}
             .hotel-container .hotel-type {
                 display: inline-block;
                 width: 110px;
@@ -310,12 +327,20 @@ body {
                 vertical-align: top;
                 font-weight: 500;
                 text-decoration: none;}
+                
+                .read-more:hover,
+                .read-more:focus{
+                 background-color: #669ec0;}
+                .read-more:active{background-color:#5496bd; color: #6ca5c6}
                
                 .hotel-container .reserve {
                     display: inline-block;
                     width: 142px;
                     vertical-align: top;
                 }
+               
+               
+
                 .hotel-container .reserve-btn {
                     color: #ffffff;
                     background-color: #766357;
@@ -326,6 +351,12 @@ body {
                     font-weight: 500;
                     text-decoration: none;
                      }
+                     .reserve-btn:hover,
+                     .reserve-btn:focus{
+                      background-color: #604e43;}
+                     .reserve-btn:active{
+                     background-color:#503e33; color: #766860}
+
              .rating-block {
                 float: right;
                 width: 185px;
@@ -343,3 +374,4 @@ body {
                 padding: 3px 13px;
                 margin-right: 72px;
                 background: #f2f2f2; }       
+               
